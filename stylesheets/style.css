@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    background-image: url(../assets/foodbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0;
+    transition: 0.5s;
+    color: #303030;
+    text-shadow: 0px 2px 3px rgb(196, 196, 196)
+}
+
+h2 {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    text-align: left;
+    color: #eff0f1;
+    text-shadow: 0px 2px 3px rgb(177, 177, 177)
+}
+
+.pic-block {
+    background: #3b3d4b;
+    border-radius: 1rem;
+    padding: 20px 100px 20px 20px;
+    margin: 1rem 1rem 1rem 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+img#pic-inside {
+    width: 20%;
+    height: 20%;
+    border-radius: 1rem;
+    float: left;
+    margin: 20px 50px 50px 20px;
+}
+
+p.text-block {
+    font-style: italic;
+    font-family: serif;
+    text-align: left;
+    color: #eeeffcd5;
+}
+
+p.price-block {
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+}
+
+/* h1:hover {
+    opacity: 65%;  
+} */
+
+p {
+    font-style: italic;
+    font-family: serif;
+    color: #161616;
+    font-size: 20px;
+    margin: 0 0 30px;
+    transition: 0.5s;
+    text-shadow: 0px 2px 3px rgb(196, 196, 196)
+}
+
+.content{
+    background: whitesmoke;
+    display: flexbox;
+    height: auto;
+    margin: 0 20% 0 20%;
+    border-radius: 1rem;
+    padding: 20px 20px 20px 20px;
+    overflow: hidden;
+    opacity: 90%;
+}
+
+.details-text{
+    text-align: right;
+}
+
+/* .button {
+    display: inline;
+    border: 2px solid #333333;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #333333;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+} */
+
+/* .button:hover{
+    background: #333333;
+    color: whitesmoke;
+} */

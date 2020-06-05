@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="../stylesheets/style.css">   
+</head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">  
+    $(document).ready(() => {
+      $.ajax({
+        url: "food/",
+        type: "GET",
+        dataType: "json",
+        success: data => {
+          var count=0;
+          var item = '';
+          var FoodId = 0;
+          var Name;
+          var Description;
+          var EstimatedPrice = 0;
+          $.each(data, function(i, val) {
+            // item =
+            // item +
+            // '<h2>' + val.Name + '</h2>' +
+            // '<p class="text-block">' + val.Description + '</p>' +
+            // '<p class="price-block">' + 'EstimatedPrice: ' + val.EstimatePrice + '</p>'
+            // console.log(item, val.FoodID)
+
+            item =
+            '<h2>' + val.Name + '</h2>' +
+            '<p class="text-block">' + val.Description + '</p>' +
+            '<p class="price-block">' + 'EstimatedPrice: ' + val.EstimatePrice + '</p>'
+            count++
+            console.log(item, val.FoodID)
+            $(item).appendTo(document.getElementById("detail-inside"+count));
+          });
+          count=0;
+        }
+      });
+    });
+  </script>
+
+<body>
+    <div>
+        <h1>Food</h1>
+        <p>The Details of foods</p>
+    </div>
+    <div class="content">
+        <div class="pic-block">
+          <img id="pic-inside" src="../assets/padThai.jpg"></img>
+          <div class="detail-text" id="detail-inside1"></div>
+        </div>
+        <div class="pic-block">
+          <img id="pic-inside" src="../assets/hamburger.jpg"></img>
+          <div class="detail-text" id="detail-inside2"></div>
+        </div>
+        <div class="pic-block">
+          <img id="pic-inside" src="../assets/TomYum.jpg">
+          <div class="detail-text" id="detail-inside3"></div>
+        </div>
+        <div class="pic-block">
+          <img id="pic-inside" src="../assets/Omurice.png">
+          <div class="detail-text" id="detail-inside4"></div>
+        </div> 
+        <div class="pic-block">
+          <img id="pic-inside" src="../assets/Ago.jpg">
+          <div class="detail-text" id="detail-inside5"></div>
+        </div>
+          
+        
+    </div>
+</body>
+</html>
